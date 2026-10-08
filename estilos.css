@@ -198,3 +198,169 @@ footer {
  max-width: 100%;
  }
 }
+
+/* ============================================
+   ESTILOS ADICIONALES PARA LOS RETOS
+   (Se conservan los estilos originales intactos)
+   ============================================ */
+
+/* RETO 1 & RETO 4: Botones Secundarios */
+.btn-icono {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.header-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+/* RETO 2: Pronóstico de 5 Días */
+.pronostico-seccion {
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+}
+.titulo-pronostico {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.pronostico-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+}
+.pronostico-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pronostico-fecha {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.pronostico-icono {
+  width: 50px;
+  height: 50px;
+}
+.pronostico-temp {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.pronostico-desc {
+  font-size: 0.75rem;
+  color: #e0e0e0;
+  text-transform: capitalize;
+  margin-top: 4px;
+}
+
+/* RETO 3: Historial de búsquedas */
+.historial-container {
+  margin-bottom: 25px;
+}
+.titulo-historial {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+.botones-historial {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn-historial {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  border-radius: 20px;
+}
+.btn-historial:hover {
+  background: #ffffff;
+  color: #1e3c72;
+}
+
+/* RETO 4: Modo Claro (mediante clase 'claro' en <body>) */
+body.claro {
+  background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
+  color: #1e293b;
+}
+body.claro header h1,
+body.claro header p,
+body.claro #estado,
+body.claro footer {
+  color: #1e293b;
+  text-shadow: none;
+}
+body.claro .resultado {
+  background: rgba(255, 255, 255, 0.8);
+  color: #0f172a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+body.claro .resultado .pais,
+body.claro .resultado .detalle .etiqueta,
+body.claro .pronostico-desc {
+  color: #475569;
+}
+body.claro .resultado .detalle,
+body.claro .pronostico-card {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+body.claro #inputCiudad {
+  border-color: #64748b;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.8);
+}
+body.claro #inputCiudad::placeholder {
+  color: #64748b;
+}
+body.claro button {
+  background: #1e293b;
+  color: #ffffff;
+}
+body.claro .btn-icono {
+  background: rgba(30, 41, 59, 0.15);
+  border-color: #1e293b;
+  color: #1e293b;
+}
+body.claro .btn-historial {
+  background: rgba(30, 41, 59, 0.1);
+  border-color: #64748b;
+  color: #1e293b;
+}
+body.claro .btn-historial:hover {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+/* RETO 5: Compartir WhatsApp */
+.acciones-extra {
+  margin-top: 20px;
+}
+.btn-whatsapp {
+  display: inline-block;
+  background: #25d366;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+.btn-whatsapp:hover {
+  background: #128c7e;
+  transform: scale(1.05);
+  color: #ffffff;
+}
